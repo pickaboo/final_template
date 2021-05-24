@@ -107,7 +107,7 @@ class Question(models.Model):
     # question text
     question_text=models.CharField(max_length=256, default="question label")
     # question grade/mark
-    question_grade_mark = models.IntegerField(default=0)
+    grade = models.IntegerField(default=0)
 
     # <HINT> A sample model method to calculate if learner get the score of the question
     def is_get_score(self, selected_ids):
